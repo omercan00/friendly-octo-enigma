@@ -18,3 +18,8 @@ git commit -a -m "Commit M"
 
 echo "2nd line" >> test.txt
 git commit -a -m "Commit D"
+echo "foobar" > test.txt
+git commit -a -m "Commit M"
+
+echo "2nd line" >> test.txt
+git commit -a -m "Commit D"
