@@ -1,1 +1,20 @@
+git init
 
+echo "initial file" > test.txt
+git add test.txt
+git commit -m "Commit A"
+
+git checkout -b foo master
+echo "foo" > test.txt
+git commit -a -m "Commit B"
+
+git checkout -b bar master
+echo "bar" > test.txt
+git commit -a -m "Commit C"
+
+git merge foo
+echo "foobar" > test.txt
+git commit -a -m "Commit M"
+
+echo "2nd line" >> test.txt
+git commit -a -m "Commit D"
